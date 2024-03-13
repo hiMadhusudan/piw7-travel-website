@@ -65,20 +65,20 @@ const DestinationEnquiryForm = () => {
         <h2 style={styles.title}>Destination Enquiry</h2>
         <form onSubmit={handleSubmit} style={styles.form}>
           <div className="mb-3">
-            <label htmlFor="name" className="form-label">Name</label>
-            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="form-control" />
+            <label htmlFor="name" className="form-label">Name<span style={{ color : '#FF0000', fontWeight: '600px', fontSize: '20px'}}>*</span></label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="form-control" />
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="form-control" />
+            <label htmlFor="email" className="form-label">Email<span style={{ color : '#FF0000', fontWeight: '600px', fontSize: '20px'}}>*</span></label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="form-control" />
           </div>
           <div className="mb-3">
             <label htmlFor="destination" className="form-label">Destination</label>
             <input type="text" id="destination" name="destination" value={formData.destination} onChange={handleChange} className="form-control" />
           </div>
           <div className="mb-3">
-            <label htmlFor="message" className="form-label">Message</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} className="form-control" style={styles.textarea}></textarea>
+            <label htmlFor="message" className="form-label">Message<span style={{ color : '#FF0000', fontWeight: '600px', fontSize: '20px'}}>*</span></label>
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} required className="form-control" style={styles.textarea}></textarea>
           </div>
           <button type="submit" className="btn btn-primary" style={styles.button}>Submit</button>
         </form>

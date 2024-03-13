@@ -94,7 +94,7 @@ export default function App() {
           target="_blank"
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          Travelite
+          Travelite &nbsp; | &nbsp; Developed by - Madhusudan Kumar
         </a>
       </div>
     </MDBFooter>
