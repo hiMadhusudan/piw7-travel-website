@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import 'bootstrap/dist/js/bootstrap.min.js';
+import { Link } from 'react-router-dom';
 import Logo from '../images/logo.png';
 
 function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark " style={{ backgroundColor: '#2979FF' }}>
+      <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#2979FF' }}>
         <div className="container">
           {/* Logo */}
           <Link className="navbar-brand" to="/">
@@ -20,15 +21,15 @@ function Header() {
           
           {/* Navbar Links and Search Box */}
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/" onClick={() => document.getElementById('navbarNav').classList.remove('show')}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/destinations">Destinations</Link>
+                <Link className="nav-link" to="/destinations" onClick={() => document.getElementById('navbarNav').classList.remove('show')}>Destinations</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" to="/contact" onClick={() => document.getElementById('navbarNav').classList.remove('show')}>Contact</Link>
               </li>
             </ul>
             <form className="d-flex">
