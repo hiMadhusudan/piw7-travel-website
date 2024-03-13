@@ -21,7 +21,7 @@ function Header() {
           
           {/* Navbar Links and Search Box */}
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav me-auto" style={{ fontWeight: 'bold', fontSize: '20px', padding: '0 20px'}}>
               <li className="nav-item">
                 <Link className="nav-link" to="/" onClick={() => document.getElementById('navbarNav').classList.remove('show')}>Home</Link>
               </li>
@@ -32,7 +32,7 @@ function Header() {
                 <Link className="nav-link" to="/contact" onClick={() => document.getElementById('navbarNav').classList.remove('show')}>Contact</Link>
               </li>
             </ul>
-            <form className="d-flex">
+            <form className="d-flex ms-lg-2">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-light" type="submit">Search</button>
             </form>
