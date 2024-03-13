@@ -11,8 +11,8 @@ const HeroSection = () => {
       </video>
       <div className="content">
         <h1>Explore Your Next Adventure</h1>
-        <p>Discover amazing destinations around the world.</p>
-        <button className="cta-button">Get Started</button>
+        <p>Discover amazing destinations around the world.</p><a href="#popular-destination">
+        <button className="cta-button">Get Started</button></a>
       </div>
     </div>
   );

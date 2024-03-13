@@ -94,7 +94,7 @@ const DestinationsSection = () => {
     return (
       <section id="destinations" className="destinations py-4">
         <Container>
-          <h2 className="text-center mb-4">Popular Destinations</h2>
+          <h2 className="text-center mb-4" id='popular-destination'>Popular Destinations</h2>
           <Row>
             <Col md={4}>
               <Card
